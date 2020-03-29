@@ -1,0 +1,25 @@
+# .gqlgen.yml example
+#
+# Refer to https://gqlgen.com/config/
+# for detailed .gqlgen.yml documentation.
+
+schema:
+- api/schema.gql
+exec:
+  filename: internal/api/generated.go
+  package: api
+model:
+  filename: internal/api/models_gen.go
+  package: api
+resolver:
+  filename: internal/api/resolver.go
+  package: api
+  type: Resolver
+models:
+  Int64:
+    model: github.com/Nashmeg/Usage.git/internal/api.Int64
+#   File:
+#     model: internal/api.File
+  # FileWhereInput:
+  #   model: internal/api.FileWhereInput
+  

@@ -1,0 +1,15 @@
+type Query {
+    files(where: FileWhereInput): [File!]!  
+}
+
+type File {
+	name: String
+	usage: Int64
+    mountPoint: String
+}
+
+input FileWhereInput {
+    mountPoint: String!
+}
+
+scalar Int64
