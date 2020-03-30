@@ -2,6 +2,7 @@ package api
 
 // THIS CODE IS A STARTING POINT ONLY. IT WILL NOT BE UPDATED WITH SCHEMA CHANGES.
 
+// Resolver type
 type Resolver struct{}
 
 // func (r *fileResolver) MountPoint(ctx context.Context, obj *File) (*string, error) {
