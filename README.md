@@ -20,12 +20,12 @@ OR
 - In a web browser open "http://localhost:8082/api/usage/playground"
 Body:
 ```
->>  {
->>     files(where:{mountPoint:"/tmp"}) {
->>       name
->>       usage
->>     }
->>  }
+  {
+     files(where:{mountPoint:"/tmp"}) {
+       name
+       usage
+     }
+  }
 ```
 OR
 - Just health check with "http://localhost:8082/api/usage/health"
